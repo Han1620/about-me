@@ -24,34 +24,40 @@ if (quizChoice == true) {
   alert("Boooooooring!");
 }
 
-//first question HELP GETTING HARD LUCK MESSAGE WITHOUT NICE WORK
-let question1 = prompt("What is my favourite sport?");
-let attempts1 = 3;
+function questionSport() {
+  //first question HELP GETTING HARD LUCK MESSAGE WITHOUT NICE WORK
+  let question1 = prompt("What is my favourite sport?");
+  let attempts1 = 3;
 
-while (!question1) {
-  question1 = prompt("C'mon, you need to guess my favourite sport!");
-}
-while (question1 != "badminton" && attempts1 > 0) {
-  question1 = prompt("Nope, try again. " + attempts1 + " attempts left.");
-  attempts1--;
-  if (attempts1 == 0) prompt("Hard luck! Let's move on...");
-}
-if ((question1 = "badminton")) {
-  console.log("Nice work " + user + "!");
+  while (!question1) {
+    question1 = prompt("C'mon, you need to guess my favourite sport!");
+  }
+  while (question1 != "badminton" && attempts1 > 0) {
+    question1 = prompt("Nope, try again. " + attempts1 + " attempts left.");
+    attempts1--;
+    if (attempts1 == 0) prompt("Hard luck! Let's move on...");
+  }
+  if ((question1 = "badminton")) {
+    console.log("Nice work " + user + "!");
+  }
 }
 
 //second question HELP NEEDED FOR ANSWER
-let petQuestion = prompt("Can you guess one of my pet animals?").toLowerCase();
-let attempts = 3;
+function questionPet() {
+  let petQuestion = prompt(
+    "Can you guess one of my pet animals?"
+  ).toLowerCase();
+  let attempts = 3;
 
-let animalsIHave = ["cat", "dog"];
+  let animalsIHave = ["cat", "dog"];
 
-while (petQuestion != animalsIHave.length && attempts > 0) {
-  attempts--;
+  while (petQuestion != animalsIHave.length && attempts > 0) {
+    attempts--;
 
-  petQuestion = prompt("Nope, try again! " + attempts + " left!");
+    petQuestion = prompt("Nope, try again! " + attempts + " left!");
+  }
+  console.log("Nice work " + user + "!");
 }
-console.log("Nice work " + user + "!");
 
 // switch (colour.toLowerCase()) {
 //   case "red":
@@ -65,3 +71,6 @@ console.log("Nice work " + user + "!");
 //       "Pretty sure that colour doesn't exist. Have you thought about red or green? ¯\\_(ツ)_/¯"
 //     );
 // }
+
+questionSport();
+questionPet();
