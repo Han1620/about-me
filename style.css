@@ -1,19 +1,41 @@
 h1 {
-  font-family: Helvetica;
+  text-align: center;
+  font-family: "Kavoon", sans-serif;
+  font-size: 2.5em;
+  color: white;
 }
 
-p {
-  color: red;
+.headerBanner {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  color: rgb(20, 1, 1);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(70, 252, 198, 1) 100%
+  );
 }
 
-p.more-content {
-  background-color: #0000ff;
-}
-
-.more-content {
-  background-color: #ff0000;
-}
-
-#something-else {
-  border: 5px dashed #00ff00;
+.body {
+  min-width: 320px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  color: rgb(20, 1, 1);
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(45, 253, 223, 1) 100%
+  );
+  width: 500px;
+  float: left;
 }
